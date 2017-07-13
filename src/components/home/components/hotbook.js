@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import newsImg from './img/news.jpg'
+import newsImg from '../img/news.jpg'
 
 export default class HotBook extends Component{
 	render(){

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import filmImg from './img/film.jpg'
+import filmImg from '../img/film.jpg'
 
 export default class HotFilm extends Component{
 	render(){

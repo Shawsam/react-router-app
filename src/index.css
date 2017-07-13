@@ -40,14 +40,31 @@ a { text-decoration:none; color:#000; }
 .framepage .container .wrapper{ min-height:1000px; border:1px solid #e8e8e8; margin-top:30px;  padding:10px 15px; border-radius:3px;} 
 .framepage .container .footer{  margin-top:30px; text-align:center; color:#999; padding:30px 0;} 
 
+.ant-back-top {
+  bottom: 100px;
+}
+.ant-back-top-inner {
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: #1088e9;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
 
 /*=================================================================================================== */
+/*==========Not Found==========*/
+.framepage{ position:relative;}
+.framepage .notfound img{ width:400px; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); }
+
 /*==========首页==========*/
-.framepage .container .wrapper .home .banner img{ width:100%; }
-.framepage .container .wrapper .home .hotfilm{ margin-top:15px; border-bottom:1px solid #e8e8e8; }
-.framepage .container .wrapper .home .hotfilm .title{ color:#F06C2C; font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
-.framepage .container .wrapper .home .hotfilm .filmlist{ font-size:0; margin:0 -6px; padding:10px 0; }
-.framepage .container .wrapper .home .hotfilm .filmlist li{ display:inline-block; width:20%; color:#108EE9; font-size:16px; padding:0 6px; box-sizing:border-box;}
-.framepage .container .wrapper .home .hotfilm .filmlist li img{ width:100%; }
-.framepage .container .wrapper .home .hotfilm .filmlist li p{ margin-top:5px; }
-.framepage .container .wrapper .home .hotfilm .filmlist li p .grade{ float:right; color:#ff6263; }
+.framepage .home .wrapper .banner img{ width:100%; }
+.framepage .home .wrapper .hotfilm{ margin-top:15px; border-bottom:1px solid #e8e8e8; }
+.framepage .home .wrapper .hotfilm .title{ color:#F06C2C; font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
+.framepage .home .wrapper .hotfilm .filmlist{ font-size:0; margin:0 -6px; padding:10px 0; }
+.framepage .home .wrapper .hotfilm .filmlist li{ display:inline-block; width:20%; color:#108EE9; font-size:16px; padding:0 6px; box-sizing:border-box;}
+.framepage .home .wrapper .hotfilm .filmlist li img{ width:100%; }
+.framepage .home .wrapper .hotfilm .filmlist li p{ margin-top:5px; }
+.framepage .home .wrapper .hotfilm .filmlist li p .grade{ float:right; color:#ff6263; }
