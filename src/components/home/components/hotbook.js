@@ -4,7 +4,7 @@ import newsImg from '../img/news.jpg'
 export default class HotBook extends Component{
 	render(){
 		return( 
-		    <div className="hotfilm">
+		    <div className="hotbook">
 		        <p className="title">热门图书</p>
 		    </div>
 		)

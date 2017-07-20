@@ -24,7 +24,14 @@ export default class Home extends Component{
                       </Carousel>
                     </div>
 
-                    <HotFilm />
+                    <HotFilm 
+                        title="热门电影" 
+                        haspage={true}
+                        total={20} 
+                        pageSize ={5}
+                        target='/film'
+                        onChange={this.pageChange}
+                    />
                     <HotNews />
                     <HotMusic />
                     <HotBook />

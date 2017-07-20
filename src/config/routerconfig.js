@@ -7,8 +7,9 @@ import Hot from '../components/hot/hot'
 import Music from '../components/music/music'
 import Book from '../components/book/book'
 import Login from '../components/login/login'
-import NotFound from '../components/notfound/notfound';
+import NotFound from '../components/notfound/notfound'
 
+import FilmDetails from '../components/filmdetails/filmdetails'
 
 export default class RouterConfig extends Component{
     render(){
@@ -17,6 +18,7 @@ export default class RouterConfig extends Component{
               <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/film" component={Film}/>
+                <Route exact path="/filmdetails/:id" component={FilmDetails}/>
                 <Route exact path="/hot" component={Hot}/>
                 <Route exact path="/music" component={Music}/>
                 <Route exact path="/book" component={Book}/>
