@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import fetchJsonp from 'fetch-jsonp';
 import * as config from '../../../config/index';
-import Loading from '../../loading';
+import Loading from '../../../containers/loading';
 import ColumHeader from '../../../containers/columheader';
 
 require('es6-promise').polyfill();
@@ -43,13 +43,14 @@ export default class HotFilm extends Component{
 
 		let filmList;
 		if(filmData){
-			    filmList = filmData.map(item=>( 
+			console.log(filmData)
+			filmList = filmData.map(item=> 
 				<li key={item.id}>
                     <Link to={ '/filmdetails/' + item.id}>
-				    <img src={item.images.large} />
-				    <p>{item.title}<span className="grade">{item.rating.average}</span></p>
+				    <img alt="film" src={item.images.large} />
+				    <p>{item.title}<span className="grade">{item.rating.average==0?item.genres[0]:item.rating.average}</span></p>
 				    </Link>
-				</li>)
+				</li>
 			)
 		}
 

@@ -1,41 +1,70 @@
 import React, {Component} from 'react'
 import {Row, Col, Carousel, Tabs} from 'antd'
-import newsImg from '../img/news.jpg'
-import newsBanner from '../img/newsbanner.jpg'
+import newsBanner1 from '../img/news_carousel_1.jpg'
+import newsBanner2 from '../img/news_carousel_2.jpg'
+import newsBanner3 from '../img/news_carousel_3.jpg'
+import newsBanner4 from '../img/news_carousel_4.jpg'
+
+
+import Loading from '../../../containers/loading';
+import ColumHeader from '../../../containers/columheader';
+import TopTenList from '../../../containers/toptenlist';
+
+require('es6-promise').polyfill();
+
 
 const {TabPane} = Tabs
 
+class NewsListBlock extends Component{
+    state = {
+    	newsData:null
+    }
 
-const NewsListBlock = ({type,count})=>{
-    
-	return(
-       <ul className="newsList">
-            <li><img /><p className="intro"></p></li>
-       </ul>
-	)
+    componentDidMount(){
+    	const {count, type} = this.props;
+    	const url=`http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=${type}&count=${count}`;
+        fetch(url).then(response=>response.json())
+        .then(data=>{
+    	    this.setState({newsData:data});
+        })
+        .catch(err=> console.log('parsing failed', err))
+    }
+
+    render(){
+    	const { newsData } = this.state;
+    	let newsList;
+    	
+    	if(newsData){
+    	    newsList = newsData.map(item =>
+    		    <li key={item.uniquekey}><img alt="新闻" src={item.thumbnail_pic_s} /><p className="intro">{item.title}</p></li>
+    	    )
+    	}
+    	return(
+    	   newsList?<ul className="newsList">{newsList}</ul>
+    	   :<Loading />
+        )
+    }
 }
 
 
-export default class HotNews extends Component{
-
-    tabClick = ({defaultActiveKey})=>{
-       console.log({defaultActiveKey});
-    }
-     
-
+export default class HotNews extends Component{     
 	render(){
+		const {title, target} = this.props;
+
 		return( 
 		    <div className="hotnews">
-		        <p className="title"><a>热点新闻</a></p>
+		        <ColumHeader title={title} target={target} />
+
 			    <Row className="content" gutter={16}>
 				        <Col span={8}>
-				          <Carousel autoplay className='newscarousel'>
-				            <div><img src={ newsBanner } alt='平壤居民罕见用韩国品牌相机拍照'/></div>
-				            <div><img src={ newsBanner } alt='土耳其公投成功海外公民有喜有悲'/></div>
-				            <div><img src={ newsBanner } alt='镜头记录雄安新区街头即景'/></div>
-				            <div><img src={ newsBanner } alt='长沙现微型古籍疑是科举作弊用书'/></div>
-				          </Carousel>
+				              <Carousel autoplay className='newscarousel'>
+				                  <div><img  src={ newsBanner1 } alt='平壤居民罕见用韩国品牌相机拍照'/></div>
+				                  <div><img  src={ newsBanner2 } alt='平壤居民罕见用韩国品牌相机拍照'/></div>
+				                  <div><img  src={ newsBanner3 } alt='平壤居民罕见用韩国品牌相机拍照'/></div>
+				                  <div><img  src={ newsBanner4 } alt='平壤居民罕见用韩国品牌相机拍照'/></div>
+					          </Carousel>
 				        </Col>
+
 				        <Col span={10}>
 					          <Tabs defaultActiveKey="1">
 					            <TabPane tab="国内" key="1">
@@ -76,8 +105,13 @@ export default class HotNews extends Component{
 					            </TabPane>
 					          </Tabs>
 				        </Col>
-				        <Col span={6}>
 
+				        <Col span={6}>
+				            <TopTenList 
+				               title="热点头条" 
+				               type='top'
+					           count={10}
+					        />
 				        </Col>
 				</Row>
 		    </div>

@@ -7,7 +7,7 @@ export default class Header extends Component{
 	render(){
 		return(
 			<div className="header clearFloat">
-			    <NavLink className="logo" to="/"><img src={logo} /></NavLink>
+			    <NavLink className="logo" to="/"><img alt="logo" src={logo} /></NavLink>
 			    <div className="nav pullRight">
 		         	<ul className="navList">
 				        <li><NavLink exact activeClassName="active" to="/">首页</NavLink></li>
