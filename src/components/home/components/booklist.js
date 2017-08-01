@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const BookList = () => {
   return (
@@ -6,13 +7,13 @@ const BookList = () => {
       <ul className="list-col list-summary">
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img1.doubanio.com/spic/s29331058.jpg" alt="世界的凛冬"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">世界的凛冬</a>
+              <NavLink to="/book/1">世界的凛冬</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -35,13 +36,13 @@ const BookList = () => {
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29276401.jpg" alt="好好学习"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">好好学习</a>
+              <NavLink to="/book/1">好好学习</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -60,19 +61,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               临界知识是不存在的，临界后的智识状态却是存在的。
-              (<a href="javascript:;">静修评论</a>)
+              (<NavLink to="/book/1">静修评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img1.doubanio.com/spic/s29343377.jpg" alt="散步去"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">散步去</a>
+              <NavLink to="/book/1">散步去</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -91,19 +92,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               某种程度上或许可以说，谷口治郎的《散步去》正是以漫画的形式为载体，传承着一种“禅”的精神。
-              (<a href="javascript:;">宝木笑评论</a>)
+              (<NavLink to="/book/1">宝木笑评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29334990.jpg" alt="地理学与生活（全彩插图第11版）"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">地理学与生活</a>
+              <NavLink to="/book/1">地理学与生活</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -122,19 +123,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               尽管我们被城市的钢筋丛林所束缚，但有空时不妨翻开书卷，通过地理学，去看看那绚丽缤纷的花花世界。
-              (<a href="javascript:;">墙头马上Hao评论</a>)
+              (<NavLink to="/book/1">墙头马上Hao评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29247833.jpg" alt="被占的宅子"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">被占的宅子</a>
+              <NavLink to="/book/1">被占的宅子</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -153,19 +154,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               故事里的人与人之间，人与物件、动物、植物之间生鲜活色的喧嚷交互，始终传递着一种浅浅淡淡却挥之不去的寂寞。
-              (<a href="javascript:;">流念水评论</a>)
+              (<NavLink to="/book/1">流念水评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img1.doubanio.com/spic/s29372139.jpg" alt="百鬼夜行 阳"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">百鬼夜行 阳</a>
+              <NavLink to="/book/1">百鬼夜行 阳</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -184,19 +185,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               人的虚妄幻想欲求逃避麻木软弱怪异愤怒堕落，如鬼魅一般穿梭，而无法走出来的人，就会陷入自己的心魔所制造的迷宫，徘徊不得出。
-              (<a href="javascript:;">不确定性原理K评论</a>)
+              (<NavLink to="/book/1">不确定性原理K评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img1.doubanio.com/spic/s29362568.jpg" alt="白先勇细说红楼梦"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">白先勇细说红楼梦</a>
+              <NavLink to="/book/1">白先勇细说红楼梦</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -215,19 +216,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               白先生这本偏重文学技巧的解析，把每一章节里的线索拆开来，草灰蛇线。
-              (<a href="javascript:;">素手纤纤评论</a>)
+              (<NavLink to="/book/1">素手纤纤评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img1.doubanio.com/spic/s29385647.jpg" alt="地下铁道"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">地下铁道</a>
+              <NavLink to="/book/1">地下铁道</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -246,19 +247,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               美国可以是一间间展示苦难的囚室，也可以是博物馆一个个展室，更可以是呼啸驰过的地铁车站的车站风景。
-              (<a href="javascript:;">藤原琉璃君评论</a>)
+              (<NavLink to="/book/1">藤原琉璃君评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29219172.jpg" alt="北京的城墙与城门"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">北京的城墙与城门</a>
+              <NavLink to="/book/1">北京的城墙与城门</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -277,19 +278,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               历史建筑是城市文化最重要的承载，失去时，更能感受到历史的厚重和沉重。
-              (<a href="javascript:;">墙头马上Hao评论</a>)
+              (<NavLink to="/book/1">墙头马上Hao评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29247833.jpg" alt="被占的宅子"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">被占的宅子</a>
+              <NavLink to="/book/1">被占的宅子</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -308,19 +309,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               故事里的人与人之间，人与物件、动物、植物之间生鲜活色的喧嚷交互，始终传递着一种浅浅淡淡却挥之不去的寂寞。
-              (<a href="javascript:;">流念水评论</a>)
+              (<NavLink to="/book/1">流念水评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29372251.jpg" alt="午夜起来听寂静"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">午夜起来听寂静</a>
+              <NavLink to="/book/1">午夜起来听寂静</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className="star-img">
@@ -340,19 +341,19 @@ const BookList = () => {
             </p>
             <p className="reviews">
               他用自己的方式对这个世界作出一次又一次评价，他用自己内心的温情来看待这个世界的种种方面。
-              (<a href="javascript:;">遥远的星空评论</a>)
+              (<NavLink to="/book/1">遥远的星空评论</NavLink>)
             </p>
           </div>
         </li>
         <li>
           <div className="cover">
-            <a href="javascript:;">
+            <NavLink to="/book/1">
               <img src="https://img3.doubanio.com/spic/s29276401.jpg" alt="好好学习"/>
-            </a>
+            </NavLink>
           </div>
           <div className="info">
             <h4 className="title">
-              <a href="javascript:;">好好学习</a>
+              <NavLink to="/book/1">好好学习</NavLink>
             </h4>
             <p className="entry-star-small">
                 <span className=" star-img">
@@ -371,7 +372,7 @@ const BookList = () => {
             </p>
             <p className="reviews">
               临界知识是不存在的，临界后的智识状态却是存在的。
-              (<a href="javascript:;">静修评论</a>)
+              (<NavLink to="/book/1">静修评论</NavLink>)
             </p>
           </div>
         </li>

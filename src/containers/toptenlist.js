@@ -31,7 +31,6 @@ export default class TopTenList extends Component{
        this.setState({isLoading:true});
        const {type, count, data} = this.props;
        if(data){
-           console.log(data);
            this.setState({toptenData:data.musicList,isLoading:false})
        }else{
            const url = `http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=${type}&count=${count}`;
