@@ -48,7 +48,7 @@ export default class HotFilm extends Component{
 				<li key={item.id}>
                     <Link to={ '/filmdetails/' + item.id}>
 				    <img alt="film" src={item.images.large} />
-				    <p>{item.title}<span className="grade">{item.rating.average==0?item.genres[0]:item.rating.average}</span></p>
+				    <p>{item.title}<span className="grade">{item.rating.average===0?item.genres[0]:item.rating.average}</span></p>
 				    </Link>
 				</li>
 			)

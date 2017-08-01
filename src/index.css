@@ -31,7 +31,7 @@ a { text-decoration:none; color:#000; }
 /*=================================================================================================== */
 .framepage .container{ width:1100px; margin:0 auto; }
 .framepage .container .header{ border-bottom:1px solid #e8e8e8; height:70px; line-height:70px; }
-.framepage .container .header .logo{ display:inline-block; height:70px; line-height:70px; padding:10px 0;}
+.framepage .container .header .logo{ display:inline-block; height:70px; line-height:70px; padding:10px 0; font-size:20px}
 .framepage .container .header .logo img{ height:50px; display:inline-block;}
 .framepage .container .header .navList li{ display:inline-block; margin:0 10px;}
 .framepage .container .header .navList li a{ position:relative; display:inline-block; padding:10px 15px; height:70px; line-height:70px; font-size:18px;}
@@ -74,8 +74,8 @@ a { text-decoration:none; color:#000; }
 .framepage .home .wrapper .banner img{ width:100%; }
 
 .framepage .home .wrapper .hotfilm{ margin-top:15px; border-bottom:1px solid #e8e8e8; }
-.framepage .home .wrapper .hotfilm .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
-.framepage .home .wrapper .hotfilm .title a{ color:#F06C2C;}
+.framepage .home .wrapper .hotfilm > .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
+.framepage .home .wrapper .hotfilm > .title a{ color:#F06C2C;}
 .framepage .home .wrapper .hotfilm .filmlist{ font-size:0; margin:0 -6px; padding:10px 0; height:330px; }
 .framepage .home .wrapper .hotfilm .filmlist li{ display:inline-block; width:20%; height:280px; color:#108EE9; font-size:16px; padding:0 6px;}
 .framepage .home .wrapper .hotfilm .filmlist li img{ width:100%; height:100%; }
@@ -83,8 +83,8 @@ a { text-decoration:none; color:#000; }
 .framepage .home .wrapper .hotfilm .filmlist li p .grade{ float:right; color:#ff6263; }
 
 .framepage .home .wrapper .hotnews{ margin-top:15px; border-bottom:1px solid #e8e8e8; }
-.framepage .home .wrapper .hotnews .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
-.framepage .home .wrapper .hotnews .title a{ color:#F06C2C; }
+.framepage .home .wrapper .hotnews > .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
+.framepage .home .wrapper .hotnews > .title a{ color:#F06C2C; }
 .framepage .home .wrapper .hotnews .content{ padding:10px 0; }
 .framepage .home .wrapper .hotnews .newscarousel{ padding:0 20px; height:430px; width:340px;}
 .framepage .home .wrapper .hotnews .newscarousel img{ height:430px; width:340px;}
@@ -93,4 +93,40 @@ a { text-decoration:none; color:#000; }
 .framepage .home .wrapper .newsList li{ height:76px; border-bottom:1px solid #e8e8e8; padding:8px 0;  padding-left:100px; }
 .framepage .home .wrapper .newsList li img{ position:absolute; left:0; width:80px; height:60px; display:block; }
 .framepage .home .wrapper .newsList li p{ height:60px; line-height:60px; }
+
+.framepage .home .wrapper .hotmusic{ margin-top:15px; border-bottom:1px solid #e8e8e8; }
+.framepage .home .wrapper .hotmusic > .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
+.framepage .home .wrapper .hotmusic > .title a{ color:#F06C2C; }
+.framepage .home .wrapper .hotmusic .content{ padding:10px 0; }
+.framepage .home .wrapper .hotmusic .content .m-cvrlst { margin: 20px 0 0 -42px;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li { width: 180px; height: 204px; float: left; display: inline-block; overflow: hidden; padding: 0 0 30px 42px; line-height: 1.4;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover { width: 140px; height: 140px; position: relative; display: block;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover img { display: block; width: 100%; height: 100%; }
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .msk { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-position: 0 0; background: url(./image/coverall.png) no-repeat;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .icon-play { display: inline-block; position: absolute; right: 10px; bottom: 5px; width: 16px; height: 17px; background: url(./image/iconall.png) no-repeat; background-position: 0 0; float: right;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .icon-headset { display: inline-block; float: left; width: 16px; height: 16px; margin: 7px 7px 7px 5px; background: url(./image/iconall.png) no-repeat; background-position: 0 -24px;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .nb { float: left; margin: 7px 0 0 0;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .bottom { position: absolute; bottom: 0; left: 0; width: 100%; height: 27px; background: url(./image/coverall.png) no-repeat; background-position: 0 -537px; color: #ccc;}
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .bottom p {margin: 8px 0 3px;width: 100%; }
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .bottom .dec { margin: 8px 0 3px; }
+.framepage .home .wrapper .hotmusic .content .m-cvrlst li div.u-cover .bottom s.tit { display: inline-block; max-width: 100%; vertical-align: middle; color: #000;}
+
+
+
+
+.framepage .home .wrapper .hotbook{ margin-top:15px; }
+.framepage .home .wrapper .hotbook > .title{ font-size:17px; border-bottom:1px solid #e8e8e8; height:40px; line-height:40px; }
+.framepage .home .wrapper .hotbook > .title a{ color:#F06C2C; }
+.framepage .home .wrapper .hotbook .list-summary { padding:10px 0; font-size: 0; clear: both;}
+.framepage .home .wrapper .hotbook .list-summary li { width: 340px; height: 180px; float: left; margin-bottom: 30px; display: inline-block; }
+.framepage .home .wrapper .hotbook .list-summary li  .cover { float: left; margin-right: 18px; }
+.framepage .home .wrapper .hotbook .list-summary li .title { font-size: 14px; height: auto; margin: 0; background: none; }
+.framepage .home .wrapper .hotbook .list-summary li .info { font-size: 12px; margin-right: 20px; height: 180px;}
+.framepage .home .wrapper .hotbook .list-summary li .info p {margin: 0;word-wrap: break-word;}
+.framepage .home .wrapper .hotbook .list-summary li .info .meta-label { display: inline-block; line-height: 1; color: #fff; padding: 2px 3px; background-color: #a1a1a1;}
+.framepage .home .wrapper .hotbook .list-summary li .reviews { color: #666; clear: both; padding-top: 15px;}
+.framepage .home .wrapper .hotbook .list-summary li .info .star-img { color: #4dd197 }
+.framepage .home .wrapper .hotbook .list-summary:after { content: ""; display: block; clear: both;}
+
+
 

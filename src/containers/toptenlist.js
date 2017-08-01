@@ -6,7 +6,6 @@ const List=({data})=>{
     if(!data){
         return(<p>暂时没有数据</p>);                     //空列表直接return
     }
-
     const itemList = data.map((item, index)=>                    //遍历数据
              <li key={item.uniquekey}>
                  <label>{index+1}</label>
@@ -30,11 +29,17 @@ export default class TopTenList extends Component{
 
   componentDidMount(){
        this.setState({isLoading:true});
-       const {title, type, count} = this.props
-       const url = `http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=${type}&count=${count}`;
-       fetch(url).then(res => res.json())
-       .then(data => this.setState({toptenData:data,isLoading:false}))
-       .catch(err => console.log('parsing failed', err));
+       const {type, count, data} = this.props;
+       if(data){
+           console.log(data);
+           this.setState({toptenData:data.musicList,isLoading:false})
+       }else{
+           const url = `http://newsapi.gugujiankong.com/Handler.ashx?action=getnews&type=${type}&count=${count}`;
+           fetch(url).then(res => res.json())
+           .then(data => this.setState({toptenData:data,isLoading:false}))
+           .catch(err => console.log('parsing failed', err));
+       }
+
   }
 
   render(){

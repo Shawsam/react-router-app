@@ -7,7 +7,7 @@ export default class Header extends Component{
 	render(){
 		return(
 			<div className="header clearFloat">
-			    <NavLink className="logo" to="/"><img alt="logo" src={logo} /></NavLink>
+			    <NavLink className="logo" to="/">React App</NavLink>
 			    <div className="nav pullRight">
 		         	<ul className="navList">
 				        <li><NavLink exact activeClassName="active" to="/">首页</NavLink></li>
@@ -16,7 +16,7 @@ export default class Header extends Component{
 				        <li><NavLink exact activeClassName="active" to="/music">音乐</NavLink></li>
 				        <li><NavLink exact activeClassName="active" to="/book">书籍</NavLink></li>
 				        <li><NavLink exact activeClassName="active" to="/login">登录</NavLink></li>
-				    </ul>
+				    </ul> 
 				</div>
 			</div>
 
